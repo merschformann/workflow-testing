@@ -26,7 +26,6 @@ jobs:
             - uses: actions/checkout@v4
               with:
                   fetch-depth: 0
-                  ref: main # Checkout main branch directly to allow creating PRs off of it
 
             - name: Setup Micromamba env
               uses: mamba-org/setup-micromamba@v1
@@ -77,6 +76,7 @@ jobs:
                   gh pr create \
                     --title "Docs release for ${{ github.ref_name }}" \
                     --body "This PR updates the switcher.json for the ${{ github.ref_name }} release." \
+                    --base main \
                     --reviewer ${{ env.REVIEWERS }}
               env:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

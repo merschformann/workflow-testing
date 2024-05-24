@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>WmsTileLayer &#8212; Folium 0.16.3.dev2+g44e432b documentation</title>
+    <title>WmsTileLayer &#8212; Folium 0.16.3.dev3+g9afdadb documentation</title>
   
   
   
@@ -37,7 +37,7 @@
 <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
   <script src="../../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
 
-    <script src="../../_static/documentation_options.js?v=dedd4588"></script>
+    <script src="../../_static/documentation_options.js?v=77ef1bcd"></script>
     <script src="../../_static/doctools.js?v=9a2dae69"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
@@ -576,7 +576,7 @@ document.write(`
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_0502df1b62a18835a91be24270d6ae0a {
+                #map_95961006ae7206d9d1edf51e68f3dbc3 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -590,14 +590,14 @@ document.write(`
 &lt;body&gt;
 
 
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_0502df1b62a18835a91be24270d6ae0a&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_95961006ae7206d9d1edf51e68f3dbc3&quot; &gt;&lt;/div&gt;
 
 &lt;/body&gt;
 &lt;script&gt;
 
 
-            var map_0502df1b62a18835a91be24270d6ae0a = L.map(
-                &quot;map_0502df1b62a18835a91be24270d6ae0a&quot;,
+            var map_95961006ae7206d9d1edf51e68f3dbc3 = L.map(
+                &quot;map_95961006ae7206d9d1edf51e68f3dbc3&quot;,
                 {
                     center: [41.0, -70.0],
                     crs: L.CRS.EPSG3857,
@@ -611,37 +611,37 @@ document.write(`
 
 
 
-            var tile_layer_cbb91ba08c15b92926ea71975a3dfe34 = L.tileLayer(
+            var tile_layer_ed0a226f9ca6ad000701de30b56b91ce = L.tileLayer(
                 &quot;https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png&quot;,
                 {&quot;attribution&quot;: &quot;\u0026copy; \u003ca href=\&quot;https://www.openstreetmap.org/copyright\&quot;\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\&quot;https://carto.com/attributions\&quot;\u003eCARTO\u003c/a\u003e&quot;, &quot;detectRetina&quot;: false, &quot;maxNativeZoom&quot;: 20, &quot;maxZoom&quot;: 20, &quot;minZoom&quot;: 0, &quot;noWrap&quot;: false, &quot;opacity&quot;: 1, &quot;subdomains&quot;: &quot;abcd&quot;, &quot;tms&quot;: false}
             );
 
 
-            tile_layer_cbb91ba08c15b92926ea71975a3dfe34.addTo(map_0502df1b62a18835a91be24270d6ae0a);
+            tile_layer_ed0a226f9ca6ad000701de30b56b91ce.addTo(map_95961006ae7206d9d1edf51e68f3dbc3);
 
 
-            var macro_element_e73cd0be15ead8ae1ddc5ae82efcf4bb = L.tileLayer.wms(
+            var macro_element_128edaf1e2e3719035e7bdf0725cdea6 = L.tileLayer.wms(
                 &quot;https://mesonet.agron.iastate.edu/cgi-bin/wms/nexrad/n0r.cgi&quot;,
                 {&quot;attribution&quot;: &quot;Weather data \u00a9 2012 IEM Nexrad&quot;, &quot;format&quot;: &quot;image/png&quot;, &quot;layers&quot;: &quot;nexrad-n0r-900913&quot;, &quot;styles&quot;: &quot;&quot;, &quot;transparent&quot;: true, &quot;version&quot;: &quot;1.1.1&quot;}
             );
 
 
-            macro_element_e73cd0be15ead8ae1ddc5ae82efcf4bb.addTo(map_0502df1b62a18835a91be24270d6ae0a);
+            macro_element_128edaf1e2e3719035e7bdf0725cdea6.addTo(map_95961006ae7206d9d1edf51e68f3dbc3);
 
 
-            var layer_control_27ff8641debaf1610ce95dde161027da_layers = {
+            var layer_control_4427cba45730f0c5ae29999e6668c5b4_layers = {
                 base_layers : {
-                    &quot;cartodbpositron&quot; : tile_layer_cbb91ba08c15b92926ea71975a3dfe34,
+                    &quot;cartodbpositron&quot; : tile_layer_ed0a226f9ca6ad000701de30b56b91ce,
                 },
                 overlays :  {
-                    &quot;test&quot; : macro_element_e73cd0be15ead8ae1ddc5ae82efcf4bb,
+                    &quot;test&quot; : macro_element_128edaf1e2e3719035e7bdf0725cdea6,
                 },
             };
-            let layer_control_27ff8641debaf1610ce95dde161027da = L.control.layers(
-                layer_control_27ff8641debaf1610ce95dde161027da_layers.base_layers,
-                layer_control_27ff8641debaf1610ce95dde161027da_layers.overlays,
+            let layer_control_4427cba45730f0c5ae29999e6668c5b4 = L.control.layers(
+                layer_control_4427cba45730f0c5ae29999e6668c5b4_layers.base_layers,
+                layer_control_4427cba45730f0c5ae29999e6668c5b4_layers.overlays,
                 {&quot;autoZIndex&quot;: true, &quot;collapsed&quot;: true, &quot;position&quot;: &quot;topright&quot;}
-            ).addTo(map_0502df1b62a18835a91be24270d6ae0a);
+            ).addTo(map_95961006ae7206d9d1edf51e68f3dbc3);
 
 
 &lt;/script&gt;
@@ -718,7 +718,7 @@ document.write(`
     <div class="footer-items__start">
       
         <div class="footer-item"><!-- This will display the version of the docs -->
-Folium version 0.16.3.dev2+g44e432b</div>
+Folium version 0.16.3.dev3+g9afdadb</div>
       
         <div class="footer-item">
 

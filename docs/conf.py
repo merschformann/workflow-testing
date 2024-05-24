@@ -108,7 +108,7 @@ html_theme = "pydata_sphinx_theme"
 # documentation.
 html_theme_options = {
     "switcher": {
-        "json_url": "https://python-visualization.github.io/folium/latest/_static/switcher.json",
+        "json_url": "https://merschformann.github.io/workflow-testing/latest/_static/switcher.json",
         "version_match": "latest" if ".dev" in version else version,
     },
     "navbar_start": ["navbar-logo", "version-switcher"],

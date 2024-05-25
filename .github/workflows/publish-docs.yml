@@ -76,7 +76,7 @@ jobs:
                   git fetch origin main
                   git checkout main
                   git checkout -b update-switcher-${{ github.ref_name }}
-                  git add docs/switcher.json
+                  git add docs/_static/switcher.json
                   git commit -m "Update switcher.json for ${{ github.ref_name }}"
                   git push origin update-switcher-${{ github.ref_name }}
                   gh pr create \

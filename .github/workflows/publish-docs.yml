@@ -75,6 +75,10 @@ jobs:
               run: |
                   git fetch origin main
                   git checkout main
+                  git checkout -b update-switcher-${{ github.ref_name }}
+                  git add docs/switcher.json
+                  git commit -m "Update switcher.json for ${{ github.ref_name }}"
+                  git push origin update-switcher-${{ github.ref_name }}
                   gh pr create \
                     --title "Docs release for ${{ github.ref_name }}" \
                     --body "This PR updates the switcher.json for the ${{ github.ref_name }} release." \

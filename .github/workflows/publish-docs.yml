@@ -58,6 +58,7 @@ jobs:
               with:
                   commit_message: Update switcher.json to ${{ github.ref_name }}
                   branch: ${{ github.head_ref }}
+                  token: ${{ secrets.PAT }}
 
             - name: Publish to Github Pages on main
               if: ${{ github.ref == 'refs/heads/main' }}

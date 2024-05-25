@@ -31,7 +31,7 @@ def main():
     # Add the new version to the list of versions (we always insert it after latest)
     new_version = {
         "version": args.version,
-        "url": f"https://python-visualization.github.io/folium/{args.version}/",
+        "url": f"https://merschformann.github.io/workflow-testing/{args.version}/",
     }
 
     # Update the latest version

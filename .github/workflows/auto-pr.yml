@@ -47,7 +47,6 @@ jobs:
                   popd
 
             - name: Update switcher and latest version
-              if: ${{ github.event_name == 'release' }}
               run: |
                   python docs/update_switcher.py --version ${{ github.ref_name }}
 

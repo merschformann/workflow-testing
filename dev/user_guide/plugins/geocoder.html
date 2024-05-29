@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Geocoder &#8212; Folium 0.16.14 documentation</title>
+    <title>Geocoder &#8212; Folium 0.16.16.dev1+g199b8c6 documentation</title>
   
   
   
@@ -37,7 +37,7 @@
 <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
   <script src="../../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
 
-    <script src="../../_static/documentation_options.js?v=62437ced"></script>
+    <script src="../../_static/documentation_options.js?v=4fb11af6"></script>
     <script src="../../_static/doctools.js?v=9a2dae69"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
@@ -47,7 +47,7 @@
     <script>
         DOCUMENTATION_OPTIONS.theme_version = '0.15.2';
         DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://merschformann.github.io/workflow-testing/dev/_static/switcher.json';
-        DOCUMENTATION_OPTIONS.theme_switcher_version_match = '0.16.14';
+        DOCUMENTATION_OPTIONS.theme_switcher_version_match = 'dev';
         DOCUMENTATION_OPTIONS.show_version_warning_banner = false;
         </script>
     <link rel="index" title="Index" href="../../genindex.html" />
@@ -567,7 +567,7 @@ document.write(`
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_1171da2f89cb111f6fa8df1454bd0ee3 {
+                #map_d9f39ee1d3db64bf002153aa695d384d {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -583,14 +583,14 @@ document.write(`
 &lt;body&gt;
 
 
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_1171da2f89cb111f6fa8df1454bd0ee3&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_d9f39ee1d3db64bf002153aa695d384d&quot; &gt;&lt;/div&gt;
 
 &lt;/body&gt;
 &lt;script&gt;
 
 
-            var map_1171da2f89cb111f6fa8df1454bd0ee3 = L.map(
-                &quot;map_1171da2f89cb111f6fa8df1454bd0ee3&quot;,
+            var map_d9f39ee1d3db64bf002153aa695d384d = L.map(
+                &quot;map_d9f39ee1d3db64bf002153aa695d384d&quot;,
                 {
                     center: [0.0, 0.0],
                     crs: L.CRS.EPSG3857,
@@ -604,32 +604,32 @@ document.write(`
 
 
 
-            var tile_layer_9669df4929bb739a4429a69fc0e23534 = L.tileLayer(
+            var tile_layer_d646e2aed40236bbbcf21949489719c7 = L.tileLayer(
                 &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
                 {&quot;attribution&quot;: &quot;\u0026copy; \u003ca href=\&quot;https://www.openstreetmap.org/copyright\&quot;\u003eOpenStreetMap\u003c/a\u003e contributors&quot;, &quot;detectRetina&quot;: false, &quot;maxNativeZoom&quot;: 19, &quot;maxZoom&quot;: 19, &quot;minZoom&quot;: 0, &quot;noWrap&quot;: false, &quot;opacity&quot;: 1, &quot;subdomains&quot;: &quot;abc&quot;, &quot;tms&quot;: false}
             );
 
 
-            tile_layer_9669df4929bb739a4429a69fc0e23534.addTo(map_1171da2f89cb111f6fa8df1454bd0ee3);
+            tile_layer_d646e2aed40236bbbcf21949489719c7.addTo(map_d9f39ee1d3db64bf002153aa695d384d);
 
 
 
-            var geocoderOpts_geocoder_e5b59ab44dd7a3f3a66e1e3422db288a = {&quot;collapsed&quot;: false, &quot;defaultMarkGeocode&quot;: true, &quot;position&quot;: &quot;topright&quot;, &quot;provider&quot;: &quot;nominatim&quot;, &quot;providerOptions&quot;: {}, &quot;zoom&quot;: 11};
+            var geocoderOpts_geocoder_ec88e2504aa136eea0c5737eb009816c = {&quot;collapsed&quot;: false, &quot;defaultMarkGeocode&quot;: true, &quot;position&quot;: &quot;topright&quot;, &quot;provider&quot;: &quot;nominatim&quot;, &quot;providerOptions&quot;: {}, &quot;zoom&quot;: 11};
 
             // note: geocoder name should start with lowercase
-            var geocoderName_geocoder_e5b59ab44dd7a3f3a66e1e3422db288a = geocoderOpts_geocoder_e5b59ab44dd7a3f3a66e1e3422db288a[&quot;provider&quot;];
+            var geocoderName_geocoder_ec88e2504aa136eea0c5737eb009816c = geocoderOpts_geocoder_ec88e2504aa136eea0c5737eb009816c[&quot;provider&quot;];
 
-            var customGeocoder_geocoder_e5b59ab44dd7a3f3a66e1e3422db288a = L.Control.Geocoder[ geocoderName_geocoder_e5b59ab44dd7a3f3a66e1e3422db288a ](
-                geocoderOpts_geocoder_e5b59ab44dd7a3f3a66e1e3422db288a[&#x27;providerOptions&#x27;]
+            var customGeocoder_geocoder_ec88e2504aa136eea0c5737eb009816c = L.Control.Geocoder[ geocoderName_geocoder_ec88e2504aa136eea0c5737eb009816c ](
+                geocoderOpts_geocoder_ec88e2504aa136eea0c5737eb009816c[&#x27;providerOptions&#x27;]
             );
-            geocoderOpts_geocoder_e5b59ab44dd7a3f3a66e1e3422db288a[&quot;geocoder&quot;] = customGeocoder_geocoder_e5b59ab44dd7a3f3a66e1e3422db288a;
+            geocoderOpts_geocoder_ec88e2504aa136eea0c5737eb009816c[&quot;geocoder&quot;] = customGeocoder_geocoder_ec88e2504aa136eea0c5737eb009816c;
 
             L.Control.geocoder(
-                geocoderOpts_geocoder_e5b59ab44dd7a3f3a66e1e3422db288a
+                geocoderOpts_geocoder_ec88e2504aa136eea0c5737eb009816c
             ).on(&#x27;markgeocode&#x27;, function(e) {
-                var zoom = geocoderOpts_geocoder_e5b59ab44dd7a3f3a66e1e3422db288a[&#x27;zoom&#x27;] || map_1171da2f89cb111f6fa8df1454bd0ee3.getZoom();
-                map_1171da2f89cb111f6fa8df1454bd0ee3.setView(e.geocode.center, zoom);
-            }).addTo(map_1171da2f89cb111f6fa8df1454bd0ee3);
+                var zoom = geocoderOpts_geocoder_ec88e2504aa136eea0c5737eb009816c[&#x27;zoom&#x27;] || map_d9f39ee1d3db64bf002153aa695d384d.getZoom();
+                map_d9f39ee1d3db64bf002153aa695d384d.setView(e.geocode.center, zoom);
+            }).addTo(map_d9f39ee1d3db64bf002153aa695d384d);
 
 
 &lt;/script&gt;
@@ -706,7 +706,7 @@ document.write(`
     <div class="footer-items__start">
       
         <div class="footer-item"><!-- This will display the version of the docs -->
-Folium version 0.16.14</div>
+Folium version 0.16.16.dev1+g199b8c6</div>
       
         <div class="footer-item">
 

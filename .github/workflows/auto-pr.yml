@@ -60,6 +60,4 @@ jobs:
                   branch: "docs/update-switcher-${{ github.ref_name }}"
                   base: "main"
                   reviewers: ${{ env.REVIEWERS }}
-                  labels: "docs"
-                  changes: |
-                      switcher.json: docs/_static/switcher.json
+                  labels: "documentation"

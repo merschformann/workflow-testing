@@ -1,0 +1,83 @@
+name: Publish Docs (pr)
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+  release:
+    types:
+      - published
+
+permissions:
+  # Give the GITHUB_TOKEN write permission to open a PR with the changes to the switcher.json file.
+  contents: write
+  pull-requests: write
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+
+    env:
+      # Define the reviewers that will be assigned to the automatically created PR.
+      REVIEWERS: "merschformann" # TODO: fix after testing
+
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+        ref: main
+
+    - name: Setup Micromamba env
+      uses: mamba-org/setup-micromamba@v1
+      with:
+        environment-name: TEST
+        create-args: >-
+          python=3
+          --file requirements.txt
+          --file requirements-dev.txt
+
+    - name: Install folium from source
+      shell: bash -l {0}
+      run: python -m pip install -e . --no-deps --force-reinstall
+
+    - name: Build documentation
+      shell: bash -l {0}
+      run: |
+        set -e
+        pushd docs
+        make clean html linkcheck
+        popd
+
+    - name: Update switcher and latest version
+      if: ${{ github.event_name == 'release' }}
+      run: |
+        python docs/update_switcher.py --version ${{ github.ref_name }}
+
+    - name: Create PR
+      uses: peter-evans/create-pull-request@v3
+      with:
+        commit-message: "docs: Update switcher.json for ${{ github.ref_name }}"
+        title: "docs: Update switcher.json for ${{ github.ref_name }}"
+        body: "This PR updates the switcher.json file."
+        branch: "docs/update-switcher-${{ github.ref_name }}"
+        base: "main"
+        reviewers: ${{ env.REVIEWERS }}
+        labels: "documentation"
+
+    - name: Publish to Github Pages on main
+      if: ${{ github.ref == 'refs/heads/main' }}
+      uses: peaceiris/actions-gh-pages@v4
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: docs/_build/html/
+        destination_dir: dev
+        keep_files: false
+
+    - name: Publish to Github Pages on release
+      if: ${{ github.event_name == 'release' }}
+      uses: peaceiris/actions-gh-pages@v4
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: docs/_build/html/
+        destination_dir: ${{ github.ref_name }}

@@ -55,6 +55,7 @@ jobs:
         python docs/update_switcher.py --version ${{ github.ref_name }}
 
     - name: Create PR
+      if: ${{ github.event_name == 'release' }}
       uses: peter-evans/create-pull-request@v3
       with:
         commit-message: "docs: Update switcher.json for ${{ github.ref_name }}"

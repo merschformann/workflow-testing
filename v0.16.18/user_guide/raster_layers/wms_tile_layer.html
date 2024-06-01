@@ -580,7 +580,7 @@ document.write(`
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_5ad93dd0197b4472b88e6392823f81af {
+                #map_bdc5720c46b32180765c068ee1940b05 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -594,14 +594,14 @@ document.write(`
 &lt;body&gt;
 
 
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_5ad93dd0197b4472b88e6392823f81af&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_bdc5720c46b32180765c068ee1940b05&quot; &gt;&lt;/div&gt;
 
 &lt;/body&gt;
 &lt;script&gt;
 
 
-            var map_5ad93dd0197b4472b88e6392823f81af = L.map(
-                &quot;map_5ad93dd0197b4472b88e6392823f81af&quot;,
+            var map_bdc5720c46b32180765c068ee1940b05 = L.map(
+                &quot;map_bdc5720c46b32180765c068ee1940b05&quot;,
                 {
                     center: [41.0, -70.0],
                     crs: L.CRS.EPSG3857,
@@ -615,37 +615,37 @@ document.write(`
 
 
 
-            var tile_layer_54be990184f9bc64fa46528a38559080 = L.tileLayer(
+            var tile_layer_277da149f2a92267e6d3cfbe03208c97 = L.tileLayer(
                 &quot;https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png&quot;,
                 {&quot;attribution&quot;: &quot;\u0026copy; \u003ca href=\&quot;https://www.openstreetmap.org/copyright\&quot;\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\&quot;https://carto.com/attributions\&quot;\u003eCARTO\u003c/a\u003e&quot;, &quot;detectRetina&quot;: false, &quot;maxNativeZoom&quot;: 20, &quot;maxZoom&quot;: 20, &quot;minZoom&quot;: 0, &quot;noWrap&quot;: false, &quot;opacity&quot;: 1, &quot;subdomains&quot;: &quot;abcd&quot;, &quot;tms&quot;: false}
             );
 
 
-            tile_layer_54be990184f9bc64fa46528a38559080.addTo(map_5ad93dd0197b4472b88e6392823f81af);
+            tile_layer_277da149f2a92267e6d3cfbe03208c97.addTo(map_bdc5720c46b32180765c068ee1940b05);
 
 
-            var macro_element_4ea4a6b0fd117d2e12f498e73f62cbe1 = L.tileLayer.wms(
+            var macro_element_be20b4a0cb0e323078baca1798fcfd7a = L.tileLayer.wms(
                 &quot;https://mesonet.agron.iastate.edu/cgi-bin/wms/nexrad/n0r.cgi&quot;,
                 {&quot;attribution&quot;: &quot;Weather data \u00a9 2012 IEM Nexrad&quot;, &quot;format&quot;: &quot;image/png&quot;, &quot;layers&quot;: &quot;nexrad-n0r-900913&quot;, &quot;styles&quot;: &quot;&quot;, &quot;transparent&quot;: true, &quot;version&quot;: &quot;1.1.1&quot;}
             );
 
 
-            macro_element_4ea4a6b0fd117d2e12f498e73f62cbe1.addTo(map_5ad93dd0197b4472b88e6392823f81af);
+            macro_element_be20b4a0cb0e323078baca1798fcfd7a.addTo(map_bdc5720c46b32180765c068ee1940b05);
 
 
-            var layer_control_3f0991b57afaaca72f51b37c2e1baf2b_layers = {
+            var layer_control_5f33e675d3583a245105bb554797efe6_layers = {
                 base_layers : {
-                    &quot;cartodbpositron&quot; : tile_layer_54be990184f9bc64fa46528a38559080,
+                    &quot;cartodbpositron&quot; : tile_layer_277da149f2a92267e6d3cfbe03208c97,
                 },
                 overlays :  {
-                    &quot;test&quot; : macro_element_4ea4a6b0fd117d2e12f498e73f62cbe1,
+                    &quot;test&quot; : macro_element_be20b4a0cb0e323078baca1798fcfd7a,
                 },
             };
-            let layer_control_3f0991b57afaaca72f51b37c2e1baf2b = L.control.layers(
-                layer_control_3f0991b57afaaca72f51b37c2e1baf2b_layers.base_layers,
-                layer_control_3f0991b57afaaca72f51b37c2e1baf2b_layers.overlays,
+            let layer_control_5f33e675d3583a245105bb554797efe6 = L.control.layers(
+                layer_control_5f33e675d3583a245105bb554797efe6_layers.base_layers,
+                layer_control_5f33e675d3583a245105bb554797efe6_layers.overlays,
                 {&quot;autoZIndex&quot;: true, &quot;collapsed&quot;: true, &quot;position&quot;: &quot;topright&quot;}
-            ).addTo(map_5ad93dd0197b4472b88e6392823f81af);
+            ).addTo(map_bdc5720c46b32180765c068ee1940b05);
 
 
 &lt;/script&gt;

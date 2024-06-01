@@ -569,7 +569,7 @@ document.write(`
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_312f3d44d77ea5593c367379a57fc748 {
+                #map_1892034b17b004dd8ceb30e2f15f655a {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -585,14 +585,14 @@ document.write(`
 &lt;body&gt;
 
 
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_312f3d44d77ea5593c367379a57fc748&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_1892034b17b004dd8ceb30e2f15f655a&quot; &gt;&lt;/div&gt;
 
 &lt;/body&gt;
 &lt;script&gt;
 
 
-            var map_312f3d44d77ea5593c367379a57fc748 = L.map(
-                &quot;map_312f3d44d77ea5593c367379a57fc748&quot;,
+            var map_1892034b17b004dd8ceb30e2f15f655a = L.map(
+                &quot;map_1892034b17b004dd8ceb30e2f15f655a&quot;,
                 {
                     center: [0.0, 0.0],
                     crs: L.CRS.EPSG3857,
@@ -606,18 +606,18 @@ document.write(`
 
 
 
-            var tile_layer_c2787394c3683c2d95eb74df6c7f2112 = L.tileLayer(
+            var tile_layer_f1f4eecfa87d4185b742f32a5218dfee = L.tileLayer(
                 &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
                 {&quot;attribution&quot;: &quot;\u0026copy; \u003ca href=\&quot;https://www.openstreetmap.org/copyright\&quot;\u003eOpenStreetMap\u003c/a\u003e contributors&quot;, &quot;detectRetina&quot;: false, &quot;maxNativeZoom&quot;: 19, &quot;maxZoom&quot;: 19, &quot;minZoom&quot;: 0, &quot;noWrap&quot;: false, &quot;opacity&quot;: 1, &quot;subdomains&quot;: &quot;abc&quot;, &quot;tms&quot;: false}
             );
 
 
-            tile_layer_c2787394c3683c2d95eb74df6c7f2112.addTo(map_312f3d44d77ea5593c367379a57fc748);
+            tile_layer_f1f4eecfa87d4185b742f32a5218dfee.addTo(map_1892034b17b004dd8ceb30e2f15f655a);
 
 
-            var realtime_83147e976ab5c291729a48f129b4d6ba_options = {&quot;interval&quot;: 1000, &quot;removeMissing&quot;: false, &quot;start&quot;: true};
+            var realtime_87c2596fb4c217857d1a183b79e75c7e_options = {&quot;interval&quot;: 1000, &quot;removeMissing&quot;: false, &quot;start&quot;: true};
 
-            realtime_83147e976ab5c291729a48f129b4d6ba_options[&quot;onEachFeature&quot;] =
+            realtime_87c2596fb4c217857d1a183b79e75c7e_options[&quot;onEachFeature&quot;] =
 function(f, l) {
     l.bindPopup(function() {
         return &#x27;&lt;h5&gt;&#x27; + dayjs.unix(f.properties.timestamp).format() + &#x27;&lt;/h5&gt;&#x27;;
@@ -626,7 +626,7 @@ function(f, l) {
 ;
 
 
-            var realtime_83147e976ab5c291729a48f129b4d6ba = L.realtime(
+            var realtime_87c2596fb4c217857d1a183b79e75c7e = L.realtime(
 
 function(responseHandler, errorHandler) {
     var url = &#x27;https://api.wheretheiss.at/v1/satellites/25544&#x27;;
@@ -656,10 +656,10 @@ function(responseHandler, errorHandler) {
     .catch(errorHandler);
 }
 ,
-            realtime_83147e976ab5c291729a48f129b4d6ba_options
+            realtime_87c2596fb4c217857d1a183b79e75c7e_options
             );
-            map_312f3d44d77ea5593c367379a57fc748.addLayer(
-                realtime_83147e976ab5c291729a48f129b4d6ba._container);
+            map_1892034b17b004dd8ceb30e2f15f655a.addLayer(
+                realtime_87c2596fb4c217857d1a183b79e75c7e._container);
 
 &lt;/script&gt;
 &lt;/html&gt;" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div></div></div>

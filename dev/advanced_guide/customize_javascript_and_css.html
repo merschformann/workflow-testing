@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Customizing javascript or css resources &#8212; Folium 0.16.17.dev9+g4d51879 documentation</title>
+    <title>Customizing javascript or css resources &#8212; Folium 0.16.18.dev1+g8242456 documentation</title>
   
   
   
@@ -37,7 +37,7 @@
 <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=3ee479438cf8b5e0d341" />
   <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=3ee479438cf8b5e0d341"></script>
 
-    <script src="../_static/documentation_options.js?v=0af67d46"></script>
+    <script src="../_static/documentation_options.js?v=1eb4d15b"></script>
     <script src="../_static/doctools.js?v=9a2dae69"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
@@ -569,7 +569,7 @@ document.write(`
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_aa9e2e7b854b39c5450ac84a569b75d3 {
+                #map_49e82da4a34ea635a0cae53182c131b3 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -585,14 +585,14 @@ document.write(`
 &lt;body&gt;
 
 
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_aa9e2e7b854b39c5450ac84a569b75d3&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_49e82da4a34ea635a0cae53182c131b3&quot; &gt;&lt;/div&gt;
 
 &lt;/body&gt;
 &lt;script&gt;
 
 
-            var map_aa9e2e7b854b39c5450ac84a569b75d3 = L.map(
-                &quot;map_aa9e2e7b854b39c5450ac84a569b75d3&quot;,
+            var map_49e82da4a34ea635a0cae53182c131b3 = L.map(
+                &quot;map_49e82da4a34ea635a0cae53182c131b3&quot;,
                 {
                     center: [0.0, 0.0],
                     crs: L.CRS.EPSG3857,
@@ -606,18 +606,18 @@ document.write(`
 
 
 
-            var tile_layer_74018eb98afb2ea5ec9eeddf21f5d43d = L.tileLayer(
+            var tile_layer_428afc55572a53ff40f66d0cdae3f3a3 = L.tileLayer(
                 &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
                 {&quot;attribution&quot;: &quot;\u0026copy; \u003ca href=\&quot;https://www.openstreetmap.org/copyright\&quot;\u003eOpenStreetMap\u003c/a\u003e contributors&quot;, &quot;detectRetina&quot;: false, &quot;maxNativeZoom&quot;: 19, &quot;maxZoom&quot;: 19, &quot;minZoom&quot;: 0, &quot;noWrap&quot;: false, &quot;opacity&quot;: 1, &quot;subdomains&quot;: &quot;abc&quot;, &quot;tms&quot;: false}
             );
 
 
-            tile_layer_74018eb98afb2ea5ec9eeddf21f5d43d.addTo(map_aa9e2e7b854b39c5450ac84a569b75d3);
+            tile_layer_428afc55572a53ff40f66d0cdae3f3a3.addTo(map_49e82da4a34ea635a0cae53182c131b3);
 
 
-            var realtime_bccc18abb83172dbebe7b7cebde60c70_options = {&quot;interval&quot;: 1000, &quot;removeMissing&quot;: false, &quot;start&quot;: true};
+            var realtime_5c478d54dada108a5f7f645436355375_options = {&quot;interval&quot;: 1000, &quot;removeMissing&quot;: false, &quot;start&quot;: true};
 
-            realtime_bccc18abb83172dbebe7b7cebde60c70_options[&quot;onEachFeature&quot;] =
+            realtime_5c478d54dada108a5f7f645436355375_options[&quot;onEachFeature&quot;] =
 function(f, l) {
     l.bindPopup(function() {
         return &#x27;&lt;h5&gt;&#x27; + dayjs.unix(f.properties.timestamp).format() + &#x27;&lt;/h5&gt;&#x27;;
@@ -626,7 +626,7 @@ function(f, l) {
 ;
 
 
-            var realtime_bccc18abb83172dbebe7b7cebde60c70 = L.realtime(
+            var realtime_5c478d54dada108a5f7f645436355375 = L.realtime(
 
 function(responseHandler, errorHandler) {
     var url = &#x27;https://api.wheretheiss.at/v1/satellites/25544&#x27;;
@@ -656,10 +656,10 @@ function(responseHandler, errorHandler) {
     .catch(errorHandler);
 }
 ,
-            realtime_bccc18abb83172dbebe7b7cebde60c70_options
+            realtime_5c478d54dada108a5f7f645436355375_options
             );
-            map_aa9e2e7b854b39c5450ac84a569b75d3.addLayer(
-                realtime_bccc18abb83172dbebe7b7cebde60c70._container);
+            map_49e82da4a34ea635a0cae53182c131b3.addLayer(
+                realtime_5c478d54dada108a5f7f645436355375._container);
 
 &lt;/script&gt;
 &lt;/html&gt;" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div></div></div>
@@ -753,7 +753,7 @@ function(responseHandler, errorHandler) {
     <div class="footer-items__start">
       
         <div class="footer-item"><!-- This will display the version of the docs -->
-Folium version 0.16.17.dev9+g4d51879</div>
+Folium version 0.16.18.dev1+g8242456</div>
       
         <div class="footer-item">
 

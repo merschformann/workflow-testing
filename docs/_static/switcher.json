@@ -5,7 +5,11 @@
   },
   {
     "version": "latest",
-    "url": "https://merschformann.github.io/workflow-testing/v0.16.17/"
+    "url": "https://merschformann.github.io/workflow-testing/v0.16.18/"
+  },
+  {
+    "version": "v0.16.18",
+    "url": "https://merschformann.github.io/workflow-testing/v0.16.18/"
   },
   {
     "version": "v0.16.17",

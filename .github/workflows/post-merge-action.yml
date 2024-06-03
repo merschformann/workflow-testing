@@ -8,7 +8,7 @@ on:
 jobs:
   print_labels:
     name: Print PR labels (only for PRs merged into main with the acceptance label)
-    if: github.event.pull_request.merged == true && github.event.pull_request.base.ref == 'main' && contains(github.event.pull_request.labels.*.name, 'acceptance')
+    if: github.event.pull_request.merged == true && github.event.pull_request.base.ref == 'main' && !contains(github.event.pull_request.labels.*.name, 'skip_acceptance')
     runs-on: ubuntu-latest
     steps:
       - name: Print PR labels

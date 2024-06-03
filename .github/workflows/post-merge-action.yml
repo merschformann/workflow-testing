@@ -10,7 +10,9 @@ jobs:
     if: github.event.pull_request.merged == true && github.event.pull_request.base.ref == 'main' && contains(github.event.pull_request.labels.*.name, 'acceptance')
     runs-on: ubuntu-latest
     steps:
-      - run: |
-          labels=${{ toJson(github.event.pull_request.labels.*.name) }}
+      - name: Print PR labels
+        env:
+          LABELS: ${{ toJson(github.event.pull_request.labels.*.name) }}
+        run: |
           echo "This PR was merged into ${{ github.event.pull_request.base.ref }} and contained the following labels:"
-          echo $labels
+          echo $LABELS

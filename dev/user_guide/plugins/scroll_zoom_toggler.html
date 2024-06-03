@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>ScrollZoomToggler &#8212; Folium 0.16.19.dev9+g282914e documentation</title>
+    <title>ScrollZoomToggler &#8212; Folium 0.16.19.dev15+gf76e9a9 documentation</title>
   
   
   
@@ -37,7 +37,7 @@
 <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=3ee479438cf8b5e0d341" />
   <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=3ee479438cf8b5e0d341"></script>
 
-    <script src="../../_static/documentation_options.js?v=45272053"></script>
+    <script src="../../_static/documentation_options.js?v=3ad4b38f"></script>
     <script src="../../_static/doctools.js?v=9a2dae69"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
@@ -570,7 +570,7 @@ document.write(`
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_f7099df2b3455f6a6de6bd8eed44b801 {
+                #map_a4ce5bdb61043b82e186058f3aa40dfa {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -582,7 +582,7 @@ document.write(`
 
 
             &lt;style&gt;
-                #scroll_zoom_toggler_c4f71fdb8ad281e052829d82241bc8aa {
+                #scroll_zoom_toggler_5731a30b9f3b03ca974c14e0498ab3eb {
                     position:absolute;
                     width:35px;
                     bottom:10px;
@@ -599,22 +599,22 @@ document.write(`
 &lt;body&gt;
 
 
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_f7099df2b3455f6a6de6bd8eed44b801&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_a4ce5bdb61043b82e186058f3aa40dfa&quot; &gt;&lt;/div&gt;
 
 
-            &lt;img id=&quot;scroll_zoom_toggler_c4f71fdb8ad281e052829d82241bc8aa&quot;
+            &lt;img id=&quot;scroll_zoom_toggler_5731a30b9f3b03ca974c14e0498ab3eb&quot;
                  alt=&quot;scroll&quot;
                  src=&quot;https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/png/512/arrow-move.png&quot;
                  style=&quot;z-index: 999999&quot;
-                 onclick=&quot;map_f7099df2b3455f6a6de6bd8eed44b801.toggleScroll()&quot;&gt;
+                 onclick=&quot;map_a4ce5bdb61043b82e186058f3aa40dfa.toggleScroll()&quot;&gt;
             &lt;/img&gt;
 
 &lt;/body&gt;
 &lt;script&gt;
 
 
-            var map_f7099df2b3455f6a6de6bd8eed44b801 = L.map(
-                &quot;map_f7099df2b3455f6a6de6bd8eed44b801&quot;,
+            var map_a4ce5bdb61043b82e186058f3aa40dfa = L.map(
+                &quot;map_a4ce5bdb61043b82e186058f3aa40dfa&quot;,
                 {
                     center: [45.0, 3.0],
                     crs: L.CRS.EPSG3857,
@@ -628,18 +628,18 @@ document.write(`
 
 
 
-            var tile_layer_de648a40473891216c733ef733422934 = L.tileLayer(
+            var tile_layer_07ef2642c6b4cdacf159d2f3d01597b0 = L.tileLayer(
                 &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
                 {&quot;attribution&quot;: &quot;\u0026copy; \u003ca href=\&quot;https://www.openstreetmap.org/copyright\&quot;\u003eOpenStreetMap\u003c/a\u003e contributors&quot;, &quot;detectRetina&quot;: false, &quot;maxNativeZoom&quot;: 19, &quot;maxZoom&quot;: 19, &quot;minZoom&quot;: 0, &quot;noWrap&quot;: false, &quot;opacity&quot;: 1, &quot;subdomains&quot;: &quot;abc&quot;, &quot;tms&quot;: false}
             );
 
 
-            tile_layer_de648a40473891216c733ef733422934.addTo(map_f7099df2b3455f6a6de6bd8eed44b801);
+            tile_layer_07ef2642c6b4cdacf159d2f3d01597b0.addTo(map_a4ce5bdb61043b82e186058f3aa40dfa);
 
 
-            map_f7099df2b3455f6a6de6bd8eed44b801.scrollEnabled = true;
+            map_a4ce5bdb61043b82e186058f3aa40dfa.scrollEnabled = true;
 
-            map_f7099df2b3455f6a6de6bd8eed44b801.toggleScroll = function() {
+            map_a4ce5bdb61043b82e186058f3aa40dfa.toggleScroll = function() {
                 if (this.scrollEnabled) {
                     this.scrollEnabled = false;
                     this.scrollWheelZoom.disable();
@@ -648,7 +648,7 @@ document.write(`
                     this.scrollWheelZoom.enable();
                 }
             };
-            map_f7099df2b3455f6a6de6bd8eed44b801.toggleScroll();
+            map_a4ce5bdb61043b82e186058f3aa40dfa.toggleScroll();
 
 &lt;/script&gt;
 &lt;/html&gt;" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div></div></div>
@@ -724,7 +724,7 @@ document.write(`
     <div class="footer-items__start">
       
         <div class="footer-item"><!-- This will display the version of the docs -->
-Folium version 0.16.19.dev9+g282914e</div>
+Folium version 0.16.19.dev15+gf76e9a9</div>
       
         <div class="footer-item">
 

@@ -4,6 +4,8 @@ on:
   pull_request:
     types:
       - closed
+    paths:
+      - ".github/workflows/post-merge-action.yml"
 
 jobs:
   print_labels:

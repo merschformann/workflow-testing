@@ -1,0 +1,15 @@
+name: sandbox
+on: [push]
+jobs:
+  sandbox:
+    runs-on: ubuntu-latest
+    steps:
+      - name: git clone
+        uses: actions/checkout@v4
+
+      - name: install nextmv CLI
+        run: |
+          export NEXTMV_API_KEY=${{ secrets.NEXTMV_API_KEY }}
+          export NEXTMV_BASE_URL=https://api.cloud.nextmv.io
+          curl -sS "https://cloud.nextmv.io/install-cli.txt" | bash -
+          nextmv configure --api-key $NEXTMV_API_KEY

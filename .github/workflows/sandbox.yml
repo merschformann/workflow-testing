@@ -12,5 +12,9 @@ jobs:
           export NEXTMV_API_KEY=${{ secrets.NEXTMV_API_KEY }}
           export NEXTMV_BASE_URL=https://api.cloud.nextmv.io
           curl -sS "https://cloud.nextmv.io/install-cli.txt" | bash -
-          export PATH=$PATH:$HOME/.nextmv
+          source ~/.bash_profile
           nextmv configure --api-key $NEXTMV_API_KEY
+          nextmv community clone -a python-highs-knapsack
+          cd python-highs-knapsack
+          nextmv app push -a test
+          cat input.json | nextmv app run -a test -w

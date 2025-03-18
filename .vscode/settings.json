@@ -1,0 +1,33 @@
+{
+    "workbench.colorCustomizations": {
+        "activityBar.activeBackground": "#e4c4a3",
+        "activityBar.background": "#e4c4a3",
+        "activityBar.foreground": "#15202b",
+        "activityBar.inactiveForeground": "#15202b99",
+        "activityBarBadge.background": "#2b9460",
+        "activityBarBadge.foreground": "#e7e7e7",
+        "commandCenter.border": "#15202b99",
+        "sash.hoverBorder": "#e4c4a3",
+        "statusBar.background": "#d8ab7c",
+        "statusBar.foreground": "#15202b",
+        "statusBarItem.hoverBackground": "#cc9255",
+        "statusBarItem.remoteBackground": "#d8ab7c",
+        "statusBarItem.remoteForeground": "#15202b",
+        "titleBar.activeBackground": "#d8ab7c",
+        "titleBar.activeForeground": "#15202b",
+        "titleBar.inactiveBackground": "#d8ab7c99",
+        "titleBar.inactiveForeground": "#15202b99"
+    },
+    "peacock.color": "#d8ab7c",
+    "editor.formatOnSave": false,
+    "prettier.tabWidth": 2,
+    // JSON related
+    "[json]": {
+        "editor.formatOnSave": false,
+    },
+
+    // YAML related
+    "[yaml]": {
+        "editor.formatOnSave": false,
+    },
+}

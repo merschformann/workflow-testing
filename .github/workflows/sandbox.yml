@@ -7,13 +7,18 @@ jobs:
       - name: git clone
         uses: actions/checkout@v4
 
+      - name: install python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
       - name: install nextmv CLI
         run: |
           export NEXTMV_API_KEY=${{ secrets.NEXTMV_API_KEY }}
           export NEXTMV_BASE_URL=https://api.cloud.nextmv.io
           curl -sS "https://cloud.nextmv.io/install-cli.txt" | bash -
           source ~/.bash_profile
-          nextmv configure --api-key $NEXTMV_API_KEY
+          nextmv configure --api-key $NEXTMV_API_KEY || true
           nextmv community clone -a python-highs-knapsack
           cd python-highs-knapsack
           nextmv app push -a test

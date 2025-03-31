@@ -16,6 +16,7 @@ jobs:
         run: |
           export NEXTMV_API_KEY=${{ secrets.NEXTMV_API_KEY }}
           export NEXTMV_BASE_URL=https://api.cloud.nextmv.io
+          echo $NEXTMV_API_KEY
           curl -sS "https://cloud.nextmv.io/install-cli.txt" | bash -
           source ~/.bash_profile
           nextmv configure --api-key $NEXTMV_API_KEY || true

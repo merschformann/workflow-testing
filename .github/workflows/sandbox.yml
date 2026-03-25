@@ -18,5 +18,5 @@ jobs:
       - name: Do something with CLI
         run: |
           nextmv cloud app push -a nextroute --version-yes --update-instance-id staging
-          nextmv cloud run create -a nextroute -i input.json --wait
+          cat input.json | nextmv cloud run create -a nextroute --wait
         working-directory: ./community-apps/go-nextroute

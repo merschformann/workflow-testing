@@ -5,18 +5,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: git clone
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
+
       - name: Install Nextmv CLI
         uses: nextmv-io/setup-nextmv@v1
         with:
           api-key: ${{ secrets.NEXTMV_API_KEY }}
 
-      - name: Clone a community app for test purposes
-        run: |
-          git clone https://github.com/nextmv-io/community-apps.git
-
-      - name: Do something with CLI
+      - name: Push new version of nextroute and update staging instance
         run: |
           nextmv cloud app push -a nextroute --version-yes --update-instance-id staging
-          cat input.json | nextmv cloud run create -a nextroute --wait
-        working-directory: ./community-apps/go-nextroute
+        working-directory: ./nextroute
